@@ -1,5 +1,5 @@
 #  CS3321 Lerning Managements System
-## Univeristy of Houston - Downtown: CS 3321 - Software Engineering Spring 2018 *italic*
+## Univeristy of Houston - Downtown: CS 3321 - Software Engineering Spring 2018
 
 The purpose of the this project is to create a learning managements system using software engineering methodology.
 
@@ -17,7 +17,7 @@ The purpose of the this project is to create a learning managements system using
 
 
 #### *Technology and Platform*
-* System will be a web based application for which will be hosted in [Heroku Runtime Platform] (https://www.heroku.com/home).
+* System will be a web based application for which will be hosted in Heroku Runtime Platform (https://www.heroku.com/home).
 * For the storing the information we will be using Python as our server and PostgreSQL for management.
 * The User Interface will be created using HTML, Javascript, CSS, and Booststrap Framework.
 
