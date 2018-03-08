@@ -7,11 +7,11 @@ The purpose of the this project is to create a learning managements system using
 
 ### *Team Members:*
 
-1. Adres Abrego
-2. Iliana Barrera
-3. Vanessa Cabrera
-4. Jose Gonzalez
-5. Lloyde Wilson
+1. Adres Abrego    (@androb4)
+2. Iliana Barrera  (@illybarr)
+3. Vanessa Cabrera (@VanessaCabrera)
+4. Jose Gonzalez   (@RockcoldIce)
+5. Lloyde Wilson   (@The-Big-Bad-Wolf)
 
 *Implemented Team Organization: Democratic*
 
