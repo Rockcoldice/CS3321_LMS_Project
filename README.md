@@ -1,4 +1,4 @@
-#  CS3321 Lerning Managements System
+#  CS3321 Learning Managements System
 ## Univeristy of Houston - Downtown: CS 3321 - Software Engineering Spring 2018
 
 The purpose of the this project is to create a learning managements system using software engineering methodology.
