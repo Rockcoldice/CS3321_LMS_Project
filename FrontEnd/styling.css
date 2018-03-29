@@ -1,0 +1,58 @@
+
+body {
+  background-image: url("stars.gif");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: repeat;
+  font-family: 'Didact Gothic';
+  color: #FFAD00;
+  font-size: 18px;
+}
+
+.button {
+    background-color: #F4D03F;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Didact Gothic';
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: 0 5px 0 #FFB30F;
+    transition: all .1s linear;
+}
+
+.button:active {
+  box-shadow: 0 2px 0 #F4D03F;
+  transform: translateY(3px);
+}
+
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signinBox {
+  width: 100%;
+  padding: 8px 20px;
+  margin:  10px 0;
+  border-radius: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
