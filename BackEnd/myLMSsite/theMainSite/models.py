@@ -25,18 +25,18 @@ class Faculty(models.Model):
 class Courses(models.Model):
     course_id = models.IntegerField(primary_key = True)
     courseName = models.CharField(max_length=40)
-    faculty = models.ForeignKey(Faculty)
+    faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE,)
 
     def __str__(self):
         return self.courseName
 
 class Enrollments(models.Model):
     enrollment_id = models.IntegerField(primary_key = True)
-    student = models.ForeignKey(Students)
-    course = models.ForeignKey(Courses)
+    student = models.ForeignKey(Students,on_delete=models.CASCADE)
+    course = models.ForeignKey(Courses,on_delete=models.CASCADE)
 
 class Grades(models.Model):
     grade_id = models.IntegerField(primary_key = True)
-    student = models.ForeignKey(Students)
-    course = models.ForeignKey(Courses)
+    student = models.ForeignKey(Students,on_delete=models.CASCADE)
+    course = models.ForeignKey(Courses,on_delete=models.CASCADE)
     courseGrade = models.IntegerField()
