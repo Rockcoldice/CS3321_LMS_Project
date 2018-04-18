@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Registration</title>
+    <meta charset = "UTF-8">
+    <meta = "description" content = "LMS Sign-In">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styling.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <script type="text/javascript" src="student_functions.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="Sign-In Page.html">Sign-In</a>
+        <a href="Registration.html">Register</a>
+        <a href="index.html">Sign-Out</a>
+      </ul>
+    </nav>
+    <center>
+      <form method = "post" action = "Sign-In Page.html" name = "Registration">
+        <div class="container">
+          <label for "firstname"> First Name:</label>
+            <input type ="text" name="firstname" class = "signinBox-registration" required><br>
+          <label for "lastname"> Last Name: </label>
+            <input type = "text" name="lastname" class = "signinBox-registration" required><br>
+          <label for "studentID">Enter Student ID #: </label>
+            <input type = "studentIdentification" name="studentNumber" class = "signinBox-registration" required><br>
+          <label for "email"> Enter Email: </label>
+            <input type = "text" name ="email" class = "signinBox-registration" required><br>
+          <label for "createdPassword">Enter Password: </label>
+            <input type = "password" name="password" class = "signinBox-registration" required><br>
+        </div>
+        <input type="submit" class="button" value="Register">
+      </form>
+    <center>
+  </body>
+</html>
