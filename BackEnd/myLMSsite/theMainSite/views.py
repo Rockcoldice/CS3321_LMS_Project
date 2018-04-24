@@ -17,3 +17,11 @@ def RegistrationPage(request):
 
 def SignIn(request):
 	return render(request,'theMainSite/SignIn.html')
+def MakeCourse(request):
+        info = CourseForm(request.POST)
+        if info.is_valid():
+                cleanData = info.cleaned_data
+                newCourse = Courses(course_id=cleanData['courseNumber'] ,courseName=cleanData['courseName'])
+        else:
+                info = CourseForm()
+        return render(request,'theMainSite/FacultyView.html')

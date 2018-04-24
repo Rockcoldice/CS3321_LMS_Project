@@ -13,9 +13,14 @@
   </tr>
 </table>
 
-<input type="Submit" value="Add a class">
-
-<input type="Submit" value="Add a grade">
+ <form action="/MakeCourse/" method="post">
+    Course name: <input type="text" name="courseName" >
+    Course Number: <input type="number" name="courseNumber">
+    Number of Students: <input type="text" name="numberStudents">
+    {% csrf_token %}
+    <input type="submit" value="Submit Course information">
+  </form>
+  
 
 </button>
 </center>
