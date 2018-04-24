@@ -25,7 +25,9 @@ SECRET_KEY = 'j3u)n4&cj##_00i9-sp6tgrh#taxs^3%%6xe4w+-k0n+6ycny6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'my-lms.herokuapp.com'
+]
 
 
 # Application definition
