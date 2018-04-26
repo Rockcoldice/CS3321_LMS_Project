@@ -11,7 +11,7 @@ The purpose of the this project is to create a learning managements system using
 2. Iliana Barrera  (@illybarr)
 3. Vanessa Cabrera (@VanessaCabrera)
 4. Jose Gonzalez   (@RockcoldIce)
-5. Lloyde Wilson   (@The-Big-Bad-Wolf)
+5. Lloyd Wilson   (@The-Big-Bad-Wolf)
 
 *Implemented Team Organization: Democratic*
 
