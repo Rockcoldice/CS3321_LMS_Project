@@ -19,7 +19,7 @@
         <div style="float:right">
           {% if user.is_authenticated %}<a>Logged in as, {{ user.get_full_name }}</a> <a href="/logout">Logout</a>
           {% else %}
-          <a href="/login">Sign-In</a>
+          <a href="/login">Login</a>
           <a href="/register">Register</a>
           {% endif %}
         </div>

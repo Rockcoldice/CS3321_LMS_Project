@@ -6,3 +6,6 @@ from .models import *
 
 # Register your models here.
 admin.site.register(Students)
+admin.site.register(Faculty)
+admin.site.register(Courses)
+admin.site.register(Grades)
