@@ -19,7 +19,7 @@
         <a href="/courses">My Courses</a>
         <a href="/about">About</a>
         <div style="float:right">
-          <a></a>
+          <a>{% if user.is_authenticated %}{{ user.get_full_name }}{% endif %}</a>
           <a href="/logout">Logout</a>
         </div>
       </ul>
