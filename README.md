@@ -3,11 +3,11 @@
 
 The purpose of the this project is to create a learning managements system using software engineering methodology.
 
-
+[Live Websie](https://my-lms.herokuapp.com)
 
 ### *Team Members:*
 
-1. Adres Abrego    (@androb4)
+1. Andres Abrego    (@androb4)
 2. Iliana Barrera  (@illybarr)
 3. Vanessa Cabrera (@VanessaCabrera)
 4. Jose Gonzalez   (@RockcoldIce)
@@ -33,6 +33,3 @@ The purpose of the this project is to create a learning managements system using
 * Must be able to set and create classes
 * Can register to classes
 * See and Submit Assignment
-
-
-
