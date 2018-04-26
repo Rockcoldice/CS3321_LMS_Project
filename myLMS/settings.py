@@ -26,6 +26,7 @@ SECRET_KEY = 'j3u)n4&cj##_00i9-sp6tgrh#taxs^3%%6xe4w+-k0n+6ycny6'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'my-lms.herokuapp.com'
 ]
 
@@ -33,6 +34,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'myLMS_website',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
