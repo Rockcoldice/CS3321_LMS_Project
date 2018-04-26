@@ -14,13 +14,14 @@
     <nav>
       <ul>
         <a href="/">Home</a>
-        <a href="/login">Sign-In</a>
-        <a href="/register">Register</a>
         <a href="/courses">My Courses</a>
         <a href="/about">About</a>
         <div style="float:right">
-          <a>{% if user.is_authenticated %}{{ user.get_full_name }}{% endif %}</a>
-          <a href="/logout">Logout</a>
+          {% if user.is_authenticated %}Logged in as, {{ user.get_full_name }} <a href="/logout">Logout</a>
+          {% else %}
+          <a href="/login">Sign-In</a>
+          <a href="/register">Register</a>
+          {% endif %}
         </div>
       </ul>
     </nav>
