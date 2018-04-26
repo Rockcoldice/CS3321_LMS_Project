@@ -53,4 +53,4 @@ class Grades(models.Model):
     courseGrade = models.IntegerField()
 
     class Meta:
-        verbose_name_plural = "Courses"
+        verbose_name_plural = "Grades"
