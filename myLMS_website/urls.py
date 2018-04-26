@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^courses/', views.courses, name='courses'),
     url(r'^login/$', login, {'template_name': 'login.html'}),
     url(r'^logout/$', logout, {'template_name': 'logout.html'}),
-    url(r'^register/', views.StudentSignUpView.as_view(), name='student_signup')
+    url(r'^register/', views.StudentSignUpView.as_view(), name='student_signup'),
+    url(r'^about/$', logout, {'template_name': 'about.html'}),
 ];
