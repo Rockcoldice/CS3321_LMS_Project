@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock title %}
+
+{% block body %}
+<center>
+  <form method = "post" action = "Sign-In Page.html" name = "Registration">
+    <div class="container">
+      <label for "firstname"> First Name:</label>
+        <input type ="text" name="firstname" class = "signinBox-registration" required><br>
+      <label for "lastname"> Last Name: </label>
+        <input type = "text" name="lastname" class = "signinBox-registration" required><br>
+      <label for "studentID">Enter Student ID #: </label>
+        <input type = "studentIdentification" name="studentNumber" class = "signinBox-registration" required><br>
+      <label for "email"> Enter Email: </label>
+        <input type = "text" name ="email" class = "signinBox-registration" required><br>
+      <label for "createdPassword">Enter Password: </label>
+        <input type = "password" name="password" class = "signinBox-registration" required><br>
+    </div>
+    <input type="submit" class="button" value="Register">
+  </form>
+<center>
+{% endblock body %}

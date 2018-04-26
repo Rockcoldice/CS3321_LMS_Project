@@ -1,34 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Faculty View page</title>
-    <link rel="stylesheet" type="text/css" href="styling.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <a href="/">Home</a>
-        <a href="/login">Sign-In</a>
-        <a href="/Registration">Register</a>
-        <a href="/">Sign-Out</a>
-      </ul>
-    </nav>
-    <center>
-      <h4>Faculty View</h4>
-      <table style="width:50%; margin-top: -15px">
-        <tr>
-          <th>Class</th>
-          <th>CRN number</th>
-          <th>Number of Students</th>
-        </tr>
-        <tr>
-        </tr>
-      </table>
+{% extends 'base.html' %}
+{% block title %}Faculty View page{% endblock title %}
 
-      <input type="Submit" id ="faculty-buttons-class" class = "button" value="Add a class">
-      <input type="Submit" id ="faculty-buttons-grade" class = "button" value="Add a grade">
+{% block body %}
+<center>
+  <h4>Faculty View</h4>
+  <table style="width:50%; margin-top: -15px">
+    <tr>
+      <th>Class</th>
+      <th>CRN number</th>
+      <th>Number of Students</th>
+    </tr>
+    <tr>
+    </tr>
+  </table>
 
-    </center>
-  </body>
-</html>
+  <input type="Submit" id ="faculty-buttons-class" class = "button" value="Add a class">
+  <input type="Submit" id ="faculty-buttons-grade" class = "button" value="Add a grade">
+
+</center>
+{% endblock body %}

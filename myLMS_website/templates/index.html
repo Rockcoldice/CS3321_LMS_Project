@@ -1,24 +1,8 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Sign-In Page </title>
-    <meta charset = "UTF-8">
-    <meta = "description" content = "LMS Sign-In">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'styling.css' %}"/>
-    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-    <script type="text/javascript" src="student_functions.js"></script>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <a href="/">Home</a>
-        <a href="/login">Sign-In</a>
-        <a href="/Registration">Register</a>
-        <a href="/">Sign-Out</a>
-      </ul>
-    </nav>
-    <h2 class = "centered"> Welcome </h2>
-  </body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<h2 class = "centered"> Welcome </h2>
+{% endblock %}
