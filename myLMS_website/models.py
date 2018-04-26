@@ -18,6 +18,9 @@ class Students(models.Model):
     def __str__(self):
         return "%s %s" % (self.firstName, self.lastName)
 
+    class Meta:
+        verbose_name_plural = "Students"
+
 class Faculty(models.Model):
     faculty_id = models.IntegerField(primary_key = True)
     firstName = models.CharField(max_length=40)
@@ -25,6 +28,9 @@ class Faculty(models.Model):
     email = models.EmailField()
     password = models.CharField(max_length=64)
     jobTitle = models.CharField(max_length=40)
+
+    class Meta:
+        verbose_name_plural = "Faculty"
 
     def __str__(self):
         return "%s %s" % (self.firstName,self.lastName)
@@ -34,6 +40,9 @@ class Courses(models.Model):
     courseName = models.CharField(max_length=40)
     faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE,)
 
+    class Meta:
+        verbose_name_plural = "Courses"
+
     def __str__(self):
         return self.courseName
 
@@ -42,3 +51,6 @@ class Grades(models.Model):
     student = models.ForeignKey(Students,on_delete=models.CASCADE)
     course = models.ForeignKey(Courses,on_delete=models.CASCADE)
     courseGrade = models.IntegerField()
+
+    class Meta:
+        verbose_name_plural = "Courses"
