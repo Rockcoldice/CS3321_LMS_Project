@@ -3,7 +3,7 @@
 
 The purpose of the this project is to create a learning managements system using software engineering methodology.
 
-[Live Websie](https://my-lms.herokuapp.com)
+[Live Website](https://my-lms.herokuapp.com)
 
 ### *Team Members:*
 
