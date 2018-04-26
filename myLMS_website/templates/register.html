@@ -5,18 +5,10 @@
 
 {% block body %}
 <center>
-  <form method = "post" action = "Sign-In Page.html" name = "Registration">
+  <form method = "post" name = "Registration">
+    {% csrf_token %}
     <div class="container">
-      <label for "firstname"> First Name:</label>
-        <input type ="text" name="firstname" class = "signinBox-registration" required><br>
-      <label for "lastname"> Last Name: </label>
-        <input type = "text" name="lastname" class = "signinBox-registration" required><br>
-      <label for "studentID">Enter Student ID #: </label>
-        <input type = "studentIdentification" name="studentNumber" class = "signinBox-registration" required><br>
-      <label for "email"> Enter Email: </label>
-        <input type = "text" name ="email" class = "signinBox-registration" required><br>
-      <label for "createdPassword">Enter Password: </label>
-        <input type = "password" name="password" class = "signinBox-registration" required><br>
+    {{ form.as_p }}
     </div>
     <input type="submit" class="button" value="Register">
   </form>

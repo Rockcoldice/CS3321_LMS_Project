@@ -2,14 +2,18 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django.contrib.auth.models import AbstractUser
+
+class User(AbstractUser):
+    is_student = models.BooleanField(default=True)
+    is_teacher = models.BooleanField(default=False)
 
 class Students(models.Model):
-    student_id = models.IntegerField(primary_key =True)
-    firstName = models.CharField(max_length=40)
-    lastName = models.CharField(max_length=40)
-    email = models.EmailField()
-    password = models.CharField(max_length=25)
-    gpa = models.IntegerField()
+    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
+    student_id = models.IntegerField(null=True)
+    gpa = models.DecimalField(decimal_places=2, max_digits=3, null=True)
 
     def __str__(self):
         return "%s %s" % (self.firstName, self.lastName)
@@ -19,7 +23,7 @@ class Faculty(models.Model):
     firstName = models.CharField(max_length=40)
     lastName = models.CharField(max_length=40)
     email = models.EmailField()
-    password = models.CharField(max_length=40)
+    password = models.CharField(max_length=64)
     jobTitle = models.CharField(max_length=40)
 
     def __str__(self):
