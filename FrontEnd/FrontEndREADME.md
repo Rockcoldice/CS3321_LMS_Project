@@ -9,7 +9,4 @@ This area will be dedicated to programming of the front-end
 2. Vanessa Cabrera ()
 
 ### *Technologies used in this section*
-* TBD.
-
-### *System Documentation for Front - End Section*
-* TBD.
+groupthink.dx.am
